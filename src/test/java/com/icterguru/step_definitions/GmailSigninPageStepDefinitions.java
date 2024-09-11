@@ -55,20 +55,20 @@ public class GmailSigninPageStepDefinitions {
 		Thread.sleep(3000);
 		driver.findElement(By.id("identifierId")).sendKeys("example@gmail.com");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span")).click();
+		//	driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span")).click();
+		//	driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("12345678");
 
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("12345678");
 
 	}
 	@When("I click on the Next button")
 	public void i_click_on_the_next_button() throws InterruptedException {
 		// Write code here that turns the phrase above into concrete actions
 		driver.findElement(By.cssSelector("//*[@id=\"passwordNext\"]/div/button/span")).click();
-		
+
 		Thread.sleep(3000);
 	}
-	
+
 	@Then("I can sign in my account")
 	public void i_can_sign_in_my_account() {
 		// Write code here that turns the phrase above into concrete actions
