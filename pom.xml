@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.icterguru</groupId>
   <artifactId>AutomatedTestingFramework1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
 	<name>AutomatedTestingFramework1</name>
 	<description>AutomatedTestingFramework1</description>
 
@@ -57,13 +57,6 @@
           <scope>test</scope>
       </dependency>
  
-      <!-- WebDriver Manager Dependency -->
-      <dependency>
-          <groupId>io.github.bonigarcia</groupId>
-          <artifactId>webdrivermanager</artifactId>
-          <version>${webdrivermanager.version}</version>
-      </dependency>
-        
   </dependencies>
   
   

@@ -1,4 +1,4 @@
-package SampleTestsWithMainMethod;
+package sampleTestsWithMainMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
