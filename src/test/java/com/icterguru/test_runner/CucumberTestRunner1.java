@@ -12,7 +12,6 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 		//features = "classpath:features/",
-		//features = {"src/test/resources/features/LoginPage.feature", "src/test/resources/features/IRSHomePage.feature" },
 		features = "src/test/resources/features/",
 		glue = {"com.icterguru.page_objects","com.icterguru.test_runner","com.icterguru.step_definitions"},	
 		//tags = "@All, @Smoke, @Regression" ,

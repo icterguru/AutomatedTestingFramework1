@@ -37,7 +37,8 @@ public class GoogleLinksTestStepdefinitions {
     public void i_go_to_google_home_page() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
      	  driver.get("https://google.com");
-        	String title = driver.getTitle();
+      
+     	  String title = driver.getTitle();
     		System.out.println("Title of the web page is: " + title);
     		String url = driver.getCurrentUrl();
     		System.out.println("URL of the page is: " + url);
