@@ -53,13 +53,15 @@ public class WalmartHomePageStepDefinitions {
 	
 	@When("I click on the Departments link")
 	public void i_click_on_the_departments_link() {
-		driver.findElement(By.xpath("//*[@id=\"accessible-megamenu-nav-item-0\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/span/div/div/nav/ul/li[1]/section/div/div/button")).click();
 		// //*[@id="accessible-megamenu-nav-item-0"]
 
+		
+		
 	}
 	@Then("I see the Departments page")
-	public void i_see_the_department_page() throws InterruptedException {
-		Assert.assertEquals(true, driver.getPageSource().contains("Department")); 	
+	public void i_see_the_departments_page() throws InterruptedException {
+		Assert.assertEquals(true, driver.getPageSource().contains("All Departments")); 	
 		Thread.sleep(5000);
 	}
 
@@ -67,18 +69,33 @@ public class WalmartHomePageStepDefinitions {
 	@When("I click on the Services link")
 	public void i_click_on_the_services_link() {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.linkText("Services")).click();
+		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/span/div/div/nav/ul/li[2]/section/div/div/button")).click();
 	}
 	@Then("I see the Services page")
 	public void i_see_the_services_page() {
 		// Write code here that turns the phrase above into concrete actions
 		//Assert.assertEquals(1, 0);
-		Assert.assertEquals(true, driver.getPageSource().contains("Services"));
+		Assert.assertEquals(true, driver.getPageSource().contains("All Services"));
 
 	}
 
+	
 
-		 
+	@When("I click on the walmart DEALS link")
+	public void i_click_on_the_walmart_deals_link() {
+		// Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.id("linkcard-ExploreDeals-GridPOVBanners-mediumBanner-contentZone5-fhmHdIWZ")).click();
+	}
+	@Then("I see the walmat DEALS page")
+	public void i_see_the_walmart_deals_page() {
+		// Write code here that turns the phrase above into concrete actions
+		//Assert.assertEquals(1, 0);
+		Assert.assertEquals(true, driver.getPageSource().contains("Get ready"));
+
+	}
+	
+	
+	
 
 	@When("I click on the Walmart {string} link")
 	public void i_click_on_the_walmart_link(String menuLinkText) throws InterruptedException {

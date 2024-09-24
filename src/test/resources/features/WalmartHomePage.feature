@@ -24,5 +24,5 @@ Scenario Outline: Testing different Walmart menu links
   |walmartMenuLinkText|walmartMenuLinkPage|
   |Departments|Departments|
   |Services|Services|
-  
+  |DEALS|DEALS|
   
